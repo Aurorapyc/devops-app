@@ -3,7 +3,7 @@ import socket
 
 app = Flask(__name__)
 
-@app.route("/healthz")
+@app.route("/health")
 def healthz():
     return {"status": "ok", "host": socket.gethostname()}
 
